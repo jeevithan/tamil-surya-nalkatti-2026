@@ -1,0 +1,68 @@
+name: tamil_surya_nalkatti
+description: "தமிழ் சூரிய நாட்காட்டி"
+
+# Prevent accidental publishing to pub.dev.
+publish_to: 'none'
+
+version: 1.0.0+13
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Core
+  intl: ^0.20.0
+  http: ^1.3.0
+  provider: ^6.1.5
+  path_provider: ^2.1.5
+  url_launcher: ^6.3.2
+  
+  # UI & Layout
+  flutter_html: ^3.0.0
+  flutter_layout_grid: ^2.0.8
+  convex_bottom_bar: ^3.2.0
+  table_calendar: ^3.2.0
+  easy_date_timeline: ^2.0.9 # Major update: Check migration guide for v2.0
+  
+  # Assets & Fonts
+  google_fonts: ^6.3.0
+  flutter_svg: ^2.2.3
+  
+  # Generators
+  flutter_gen: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  # Lints & Tools
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.14.4
+  cupertino_icons: ^1.0.8
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/images/
+    - assets/
+    - assets/images/sun.svg
+    - assets/images/sun.png
+    - assets/images/icon.svg
+    - assets/images/appbar_logo.png
+    - assets/images/app_logo.png
+    - assets/images/app_icon.png
+  fonts:
+    - family: NotoSansTamil
+      fonts:
+        - asset: assets/fonts/NotoSansTamil-Regular.ttf
+        - asset: assets/fonts/NotoSansTamil-Bold.ttf
+          weight: 700
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_logo.png"
